@@ -7,4 +7,10 @@ Assim , chegamos a relação de alfa = 60;
 o Código foi implementado a partir da saída PWM (Modulação por Largura de Pulso), não foi necessário bibliotecas a serem incluídas.
 # Python:
  Os Arquivos para a leitura e a obtenção de gráficos e sua Função de Transferência em Malha Aberta , foram realizadas pelo python, aqui foram necessária a inclusão de algumas bibliotecas como:
- 
+serial - para gerar um arquivo txt tivemos que conectar com a saída serial do arduino
+os - biblioteca para gerar o txt.
+keyboard  - Importa a biblioteca keyboard.
+datetime - obter o horário para facilitar a descrição dos arquivos gerados.
+time - o horário apresentado.
+
+Para a modelagem da Resposta ao Degrau:
