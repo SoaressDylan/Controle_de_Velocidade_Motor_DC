@@ -1,0 +1,38 @@
+clear; clc; close all;
+
+% Definindo a função simbólica de t
+syms t
+syms s
+ganho_do_degrau = 2108.57142857143;
+ganho_da_exponencial = 1834.2857142857158;
+constante_de_tempo = 0.03890500000000019;
+
+U_s = 50 + 200/s
+
+y_t = ganho_do_degrau*1-ganho_da_exponencial*exp(-t/constante_de_tempo)
+%y_t = (ganho_do_degrau-ganho_da_exponencial) + ganho_da_exponencial*(1-exp(-t/constante_de_tempo))
+Y_s = laplace(y_t)
+
+FTMA = (simplify(Y_s/U_s));
+[n,d] = numden(FTMA);
+n_FTMA = double(sym2poly(n));                  % Convert To Polynomial Vectors & 'double' Values (From Symbolic Variables)
+d_FTMA = double(sym2poly(d));                  % Convert To Polynomial Vectors & 'double' Values (From Symbolic Variables)
+tf_FTMA = tf(n_FTMA, d_FTMA)  
+
+
+
+ figure
+ h = bodeplot(tf_FTMA,{2*pi*0.01,2*pi*10000});
+ setoptions(h,'FreqUnits','Hz','PhaseVisible','off');
+ title('Diagrama de Bode - Módulo');
+ ylabel('Magnitude');
+ xlabel('Frequencia');
+ grid on;
+ 
+  figure
+ h = bodeplot(tf_FTMA,{2*pi*0.01,2*pi*10000});
+ setoptions(h,'FreqUnits','Hz','MagVisible','off');
+ title('Diagrama de Bode - Fase');
+ ylabel('Fase');
+ xlabel('Frequencia');
+ grid on;
