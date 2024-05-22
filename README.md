@@ -5,3 +5,6 @@
 V(rpm) =  ((cont/n)/(delta(T)*10^-6)) . 60 , onde n*delta(T) = alfa.
 Assim , chegamos a relação de alfa = 60;
 o Código foi implementado a partir da saída PWM (Modulação por Largura de Pulso), não foi necessário bibliotecas a serem incluídas.
+# Python:
+ Os Arquivos para a leitura e a obtenção de gráficos e sua Função de Transferência em Malha Aberta , foram realizadas pelo python, aqui foram necessária a inclusão de algumas bibliotecas como:
+ 
