@@ -21,3 +21,6 @@ math- Para gerar as curvas modeladas
 os - Para criar uma pasta com os gráficos
 sympy - Para enccontrar a função de transferência
 control - biblioteca de controle
+
+# MatLab:
+ A fim de obter o gráfico de Bode , foi utilizado as funções de bodeplot  com os dados já obtidos anteriormente.
