@@ -14,3 +14,10 @@ datetime - obter o horário para facilitar a descrição dos arquivos gerados.
 time - o horário apresentado.
 
 Para a modelagem da Resposta ao Degrau:
+tkinter - Para o pop-up de escolher o txt com os dados
+tkinter import filedialog  - Para o pop-up de escolher o txt com os dados
+matplotlib.pyplot-  Para o plot dos gráficos
+math- Para gerar as curvas modeladas
+os - Para criar uma pasta com os gráficos
+sympy - Para enccontrar a função de transferência
+control - biblioteca de controle
