@@ -1,4 +1,4 @@
-# Controle de Velocidade Motor DC
+# Controle de Velocidade Motor DC ⚙️:
 ``` bash 
  O Código está dividido entre Arduino, Python e Matlab.
  A motivação veio em modelar a partir dos conhecimentos teóricos de controle um controlador a velocidade do motor DC.
