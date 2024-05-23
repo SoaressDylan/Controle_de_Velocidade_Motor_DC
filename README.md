@@ -33,3 +33,4 @@ control - biblioteca de controle
 ```bash 
  A fim de obter o gráfico de Bode , foi utilizado as funções de bodeplot  com os dados já obtidos anteriormente.
 ```
+By Arthur Arruda , Dylan Soares, Marcelle Faciroli
