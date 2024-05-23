@@ -1,3 +1,4 @@
+```bash
 clear; clc; close all;
 
 % Definindo a função simbólica de t
@@ -36,3 +37,4 @@ tf_FTMA = tf(n_FTMA, d_FTMA)
  ylabel('Fase');
  xlabel('Frequencia');
  grid on;
+```
