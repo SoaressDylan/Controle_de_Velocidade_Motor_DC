@@ -17,7 +17,7 @@ serial - para gerar um arquivo txt tivemos que conectar com a saída serial do a
 os - biblioteca para gerar o txt.
 keyboard  - Importa a biblioteca keyboard.
 datetime - obter o horário para facilitar a descrição dos arquivos gerados.
-time - o horário apresentado.
+ time - o horário apresentado.
 
 Para a modelagem da Resposta ao Degrau:
 tkinter - Para o pop-up de escolher o txt com os dados
