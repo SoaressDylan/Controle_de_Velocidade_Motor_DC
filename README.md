@@ -1,12 +1,17 @@
 # Controle de Velocidade Motor DC
+``` bash 
  O Código está dividido entre Arduino, Python e Matlab.
  A motivação veio em modelar a partir dos conhecimentos teóricos de controle um controlador a velocidade do motor DC.
-# Arduíno:
+```
+# Arduíno 💻:
+``` bash
    Em primeira instância, o calculo de furos(N) foi calculado, com N sendo apresentado a partir de uma medição com o auxílio de um tacômetro, chegamos em N = 400 , em sequência foi calculado seu alfa, através da seguinte relação:
 V(rpm) =  ((cont/n)/(delta(T)*10^-6)) . 60 , onde n*delta(T) = alfa.
 Assim , chegamos a relação de alfa = 60;
 o Código foi implementado a partir da saída PWM (Modulação por Largura de Pulso), não foi necessário bibliotecas a serem incluídas.
-# Python:
+```
+# Python 🐍:
+``` bash 
  Os Arquivos para a leitura e a obtenção de gráficos e sua Função de Transferência em Malha Aberta , foram realizadas pelo python, aqui foram necessária a inclusão de algumas bibliotecas como:
 serial - para gerar um arquivo txt tivemos que conectar com a saída serial do arduino
 os - biblioteca para gerar o txt.
@@ -22,6 +27,9 @@ math- Para gerar as curvas modeladas
 os - Para criar uma pasta com os gráficos
 sympy - Para enccontrar a função de transferência
 control - biblioteca de controle
+```
 
-# MatLab:
+# MatLab 📈 :
+```bash 
  A fim de obter o gráfico de Bode , foi utilizado as funções de bodeplot  com os dados já obtidos anteriormente.
+```
